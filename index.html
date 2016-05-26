@@ -9,15 +9,24 @@
                 font-family: Nitti;
                 src: url('nitti-light-v40.woff') format('woff');
             }
-            a { color: #000; }
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+            a:hover {
+                border-bottom: 1px solid #FFD200;
+            }
             html, body {
                 margin: 0;
                 padding: 0;
                 height: 100%;
                 font-family: Nitti, sans-serif;
+                font-size: 13px;
             }
             section {
-                height: 100%;
+                min-height: 100%;
+                margin: 0;
+                padding: 0;
             }
             .igor {
                 background: #FFD200;
@@ -43,6 +52,71 @@
                 margin-top: 2em;
                 line-height: 1.5em;
             }
+            .mountains {
+                background-image: url('mountains.jpg');
+                background-size: cover;
+            }
+            .hands {
+                background-image: url('hands.jpg');
+                background-size: cover;
+            }
+            .text-section {
+                background: #fafafa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6em 2em 3em 2em;
+            }
+            .hallo-welcome h3 {
+                font-weight: normal;
+                font-size: 36px;
+                text-align: center;
+                margin-bottom: 2em;
+            }
+            .block { margin-bottom: 2em; }
+            .block p {
+                margin: 0 0 2em 0;
+                line-height: 1.25em;
+            }
+            .block h4 {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 2em 0 0;
+                color: #A1A1A1;
+                font-weight: normal;
+                min-width: 10em;
+                text-align: right;
+            }
+            .block .points { display: inline-block; }
+
+            @media only screen and (max-width: 625px) {
+                .block h4 {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 1em;
+                    margin-top: 4em;
+                }
+                .block .points { display: block; }
+
+            }
+
+            .company { border-bottom: 1px solid #000; }
+            .lighter-text { color: #A1A1A1; }
+            .bye {
+                background-image: url('pattern.png');
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .bye span {
+                background: #000;
+                display: inline-block;
+                padding: .75em 1.25em;
+                color: #FFF;
+                text-transform: uppercase;
+            }
+            .download { margin-left: 12.5em; }
         </style>
     </head>
     <body>
@@ -51,7 +125,89 @@
                 <img src="pine.png" />
                 <p>σοφία</p>
                 <h2>SOFIYA TEPIKIN | UI DEVELOPER</h2>
-                <span>^^^<br />Coming soon – I promise!<br />>___< Check my <a href="cv.pdf">CV</a> meanwhile</span>
+            </div>
+        </section>
+
+        <section class="hands">
+
+        </section>
+        <section class="hallo-welcome text-section">
+            <div class="content">
+                <h3>HALLO & WELCOME</h3>
+                <div class="block">
+                    <h4>OBJECTIVE</h4>
+                    <div class="points">
+                        <p>> MARKUP & STYLES MADE WITH LOVE & PASSION<br />> RESPECT TO DESIGN, UX & DETAILS<br />> JS & OTHER ANIMALS</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4>SUBJECTIVE</h4>
+                    <div class="points">
+                        <p>> LET’S TIMEBOX, REFACTOR, DELIVER, BE PRAGMATIC,<br /> ITERATE, DEBUG & MEET THE DEADLINES.</p>
+                        <p>> PLEASE NO MORE – ENDLESS MEETINGS, TALKING > DOING<br />
+  BEING TOO PRAGMATIC & HOLY TECH WARS. </p>
+                        <p>> I’M LOOKING FOR CREATIVE, MOTIVATED<br />& CURIOUS PEOPLE TO WORK ON INTERESTING<br />& CHALLENGING PROJECTS IN PROFFESIONAL ENV.</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4>ABOUT</h4>
+                    <div class="points">
+                        <p>> 1986 — BORN IN <strike>THE MOST BEAUTIFULL CITY<br /> IN THE WORLD</strike> SAINT-PETERSBURG, RUSSIA<br />_ 1995 — MOVED TO WARMY-HOMY ISRAEL <br />_ 2013 — BASED IN MULTI-KULTI BERLIN</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4>LANGUAGES</h4>
+                    <div class="points">
+                        <p>> RUSSIAN & HEBREW — NATIVE<br />_ ENGLISH — FLUENT<br />_ GERMAN ~ B1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mountains">
+
+        </section>
+        <section class="experience-and-more-about text-section">
+            <div class="content">
+
+                <div class="block">
+                    <h4>EXPERIENCE</h4>
+                    <div class="points">
+                        <p>> <span class="company"><a href="http://deliveryhero.com" target="_blank">DELIVERY HERO</a></span> (2013–16) @ BERLIN, GERMANY <br />_ FRONT-END DEV, TEST AUTOMATION TEAM LEAD*<br />_ JS, BACKBONE, REACT, NODE.JS,<br />_ SASS, HTML5(!), GULP<br />[ <a href="http://lieferheld.de" target="_blank">GERMANY</a> | <a href="http://deliveryhero.com.au" target="_blank">AUSTRALIA</a> ]</p>
+                        <p>> <span class="company"><a href="http://netcraft.co.il" target="_blank">NETCRAFT</a></span> (2011–12) @ TLV, ISRAEL <br />_ FRONT-END DEVELOPMENT & MAINTENANCE</p>
+<p>> <span class="company">TUFIN TECHNOLOGIES</span>* (2011–12) @ TLV, ISRAEL <br />_ *PART-TIME OUTSOURCE FROM NETCRAFT<br />
+_ FRONT-END REDESIGN & REFACTORING PROJECT</p>
+<p>> <span class="company">THE NATION TRAFFIC</span> (2008–10) @ TLV, ISRAEL <br />_ FRONT-END DEVELOPMENT & MAINTENANCE</p>
+<p>> <span class="company">IDF SPOKESPERSON</span> (2005–07) @ TLV, ISRAEL <br />_ ARMY SERVICE. MAINTAINING OFFICIAL WEBSITE</p>
+<p>> PERSONAL/FREELANCE PROJECTS @ <span class="company">WEBANDA</span></p>
+<p class="lighter-text">// WORK & CODE EXAMPLES UPON REQUEST</p>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h4>EDUCATION</h4>
+                    <div class="points">
+                        <p>> <a href="https://en.wikipedia.org/wiki/Autodidacticism" target="_blank">AUTODIDACTISM</a>, <a href="http://google.com">GOOGLE</a> & PASSION</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4>MOREOVER</h4>
+                    <div class="points">
+                        <p>> MUSIC, YOGA, TRAVELING, VISUAL COMMUNICATION<br />_ & PING-PONG</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4>CONTACT</h4>
+                    <div class="points">
+                        <p>> +4915773220240<br />_ <a href="mailto:sofiya.tepikin@gmail.com">SOFIYA.TEPIKIN@GMAIL.COM</a><br />_ <a href="#" target="_blank">HTTP://SDVIG.GITHUB.IO</a></p>
+                    </div>
+                </div>
+                <p class="download"><a href="cv.pdf">CV</a> <span class="lighter-text">[as PDF]</span></p>
+
+            </div>
+        </section>
+        <section class="bye">
+            <div class="content">
+                <span>Tschüss</span>
             </div>
         </section>
     </body>
